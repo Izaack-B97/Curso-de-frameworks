@@ -44,5 +44,18 @@ var array = ['Victor', 'Isaac', 'Antonio'];
 
 document.write('<h1>Nombres</h1>');
 array.forEach(nombre => {
-    document.write('<h3>' + nombre + '</h3>');
+    document.write('<h3>' + nombre + '</h3  >');
 });
+
+var coche = {
+    modelo: 'Mercedes Clase A',
+    maxima: 500,
+    antiguedad: 2020,
+    mostrarDatos() {
+        console.log(this.modelo, this.maxima,this.antiguedad);
+    },
+    propiedades: "valor aleatorio"
+}
+
+document.write(`<h1>${coche.modelo}</h1>`);
+coche.mostrarDatos();
