@@ -59,3 +59,5 @@ var coche = {
 
 document.write(`<h1>${coche.modelo}</h1>`);
 coche.mostrarDatos();
+
+console.log(coche);
