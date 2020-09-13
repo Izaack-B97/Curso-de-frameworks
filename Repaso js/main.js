@@ -61,3 +61,25 @@ document.write(`<h1>${coche.modelo}</h1>`);
 coche.mostrarDatos();
 
 console.log(coche);
+
+/** Promesas */
+
+var saludar = new Promise((resolve, reject) => {
+    setTimeout(() => {
+        let saludo;
+
+        if(saludo) {
+            resolve(saludo);
+        } else {
+            reject('No hay saludo disponible');
+        }
+    }, 2000);
+});
+
+saludar
+    .then(res => {
+        alert(res)
+    })
+    .catch(err => {
+        alert(err);
+    });
